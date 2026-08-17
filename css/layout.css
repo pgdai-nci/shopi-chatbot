@@ -1,86 +1,14 @@
-body { min-height: 100vh; }
-
-/* Store demo content behind widget */
-.shopi-store-demo {
-  padding: var(--shopi-space-2xl);
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.shopi-store-demo__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-bottom: var(--shopi-space-xl);
-  border-bottom: 1px solid var(--shopi-border);
-  margin-bottom: var(--shopi-space-2xl);
-}
-
-.shopi-store-demo__title {
-  font-size: var(--shopi-font-size-xl);
-  font-weight: 700;
-}
-
-.shopi-store-demo__nav {
-  display: flex;
-  gap: var(--shopi-space-lg);
-  font-size: var(--shopi-font-size-sm);
-}
-
-.shopi-store-demo__hero {
-  text-align: center;
-  padding: 80px var(--shopi-space-xl);
-  background: linear-gradient(135deg, #FFF5EE, #FFE8D6);
-  border-radius: var(--shopi-radius-lg);
-  margin-bottom: var(--shopi-space-2xl);
-}
-
-.shopi-store-demo__hero h2 {
-  font-size: 32px;
-  margin-bottom: var(--shopi-space-sm);
-}
-
-.shopi-store-demo__hero p {
-  color: var(--shopi-text-secondary);
-  max-width: 500px;
-  margin: 0 auto;
-}
-
-.shopi-store-demo__grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: var(--shopi-space-lg);
-}
-
-.shopi-store-demo__card {
-  background: var(--shopi-surface);
-  border-radius: var(--shopi-radius-md);
-  overflow: hidden;
-}
-
-.shopi-store-demo__card-img {
-  width: 100%;
-  height: 180px;
-  background: var(--shopi-surface-alt);
+body {
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--shopi-text-muted);
-  font-size: var(--shopi-font-size-sm);
+  background: linear-gradient(135deg, #FFF5EE 0%, #FFE8D6 50%, #FFF0E6 100%);
+  padding: var(--shopi-space-lg);
 }
 
-.shopi-store-demo__card-body {
-  padding: var(--shopi-space-md);
-}
-
-.shopi-store-demo__card-title {
-  font-size: var(--shopi-font-size-base);
-  font-weight: 600;
-  margin-bottom: var(--shopi-space-xs);
-}
-
-.shopi-store-demo__card-price {
-  font-size: var(--shopi-font-size-lg);
-  font-weight: 700;
-  color: var(--shopi-primary);
+@media (min-width: 768px) {
+  body {
+    padding: var(--shopi-space-2xl);
+  }
 }

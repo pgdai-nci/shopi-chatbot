@@ -3,7 +3,7 @@ import { searchProducts } from './products.js';
 import { saveConversation } from './storage.js';
 
 let widget, bubble, panel, messagesEl, inputForm, inputField, sendBtn, chipsEl;
-let widgetState = 'closed';
+let widgetState = 'open';
 let conversationHistory = [];
 let chatProducts = [];
 let rateLimitCount = 0;
@@ -40,6 +40,10 @@ export function initChat({ products, history }) {
     firstVisitDone = true;
     restoreHistory();
     hideChips();
+  } else {
+    setTimeout(() => {
+      appendMessage('system', "Hi there! I'm Shopi, your shopping assistant. How can I help you today?");
+    }, 300);
   }
 }
 
@@ -54,7 +58,10 @@ function initBubble() {
 }
 
 function initPanelClose() {
-  document.getElementById('shopi-panel-close').addEventListener('click', closePanel);
+  const closeBtn = document.getElementById('shopi-panel-close');
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closePanel);
+  }
 }
 
 function initInput() {
@@ -123,44 +130,21 @@ function initScrollDetection() {
 
 function openPanel() {
   widgetState = 'open';
-  bubble.setAttribute('aria-expanded', 'true');
   panel.classList.remove('shopi-panel--hidden');
-  setBubbleIcon('close');
-
-  if (window.innerWidth < 768) {
-    bubble.style.display = 'none';
-  }
-
-  if (!firstVisitDone) {
-    firstVisitDone = true;
-    setTimeout(() => {
-      appendMessage('system', "Hi there! 👋 I'm Shopi, your shopping assistant. How can I help you today?");
-    }, 300);
-  }
-
+  bubble.classList.add('shopi-bubble--hidden');
   inputField.focus();
   scrollToBottom();
 }
 
 function closePanel() {
   widgetState = 'closed';
-  bubble.setAttribute('aria-expanded', 'false');
   panel.classList.add('shopi-panel--hidden');
-  setBubbleIcon('chat');
-  bubble.style.display = '';
+  bubble.classList.remove('shopi-bubble--hidden');
   bubble.focus();
 }
 
 function setBubbleIcon(icon) {
-  const openIcon = bubble.querySelector('.shopi-bubble-icon--open');
-  const closeIcon = bubble.querySelector('.shopi-bubble-icon--close');
-  if (icon === 'close') {
-    openIcon.hidden = true;
-    closeIcon.hidden = false;
-  } else {
-    openIcon.hidden = false;
-    closeIcon.hidden = true;
-  }
+  // Kept for compatibility — no longer used in full-page layout
 }
 
 function setWidgetState(state) {
