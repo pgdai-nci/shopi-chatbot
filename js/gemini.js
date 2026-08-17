@@ -1,4 +1,4 @@
-const WORKER_URL = 'https://shopi-proxy.live-applications.workers.dev';
+const WORKER_URL = 'https://shopi-proxy.liveapplications.workers.dev';
 
 const SYSTEM_INSTRUCTION = `You are Shopi, a friendly and helpful shopping assistant for an online store called Shopi. Your role is to help customers find products, answer questions about sizing, shipping, returns, and store policies.
 
