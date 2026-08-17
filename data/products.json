@@ -1,0 +1,114 @@
+{
+  "products": [
+    {
+      "id": "prod_001",
+      "title": "Summer Floral Dress",
+      "description": "Lightweight floral print dress, perfect for warm weather. Available in sizes XS–XL.",
+      "price": "$39.99",
+      "compareAtPrice": "$59.99",
+      "image": "https://via.placeholder.com/280x200/FFE4D6/FF6B35?text=Floral+Dress",
+      "url": "#",
+      "tags": ["dress", "summer", "floral", "women", "sale"],
+      "available": true
+    },
+    {
+      "id": "prod_002",
+      "title": "Classic White Sneakers",
+      "description": "Clean white leather sneakers that go with everything. Comfortable all-day wear.",
+      "price": "$64.99",
+      "compareAtPrice": null,
+      "image": "https://via.placeholder.com/280x200/F5F5F5/1A1A1A?text=Sneakers",
+      "url": "#",
+      "tags": ["shoes", "sneakers", "white", "unisex", "leather"],
+      "available": true
+    },
+    {
+      "id": "prod_003",
+      "title": "Slim Fit Denim Jeans",
+      "description": "Modern slim fit jeans in classic indigo. Stretch fabric for comfort.",
+      "price": "$54.99",
+      "compareAtPrice": "$74.99",
+      "image": "https://via.placeholder.com/280x200/DBEAFE/2563EB?text=Denim+Jeans",
+      "url": "#",
+      "tags": ["jeans", "denim", "slim", "men", "women", "sale"],
+      "available": true
+    },
+    {
+      "id": "prod_004",
+      "title": "Canvas Tote Bag",
+      "description": "Durable canvas tote with inner pocket. Perfect for everyday errands or beach trips.",
+      "price": "$24.99",
+      "compareAtPrice": null,
+      "image": "https://via.placeholder.com/280x200/FEF3C7/92400E?text=Tote+Bag",
+      "url": "#",
+      "tags": ["bag", "tote", "canvas", "accessories", "unisex"],
+      "available": true
+    },
+    {
+      "id": "prod_005",
+      "title": "Organic Cotton T-Shirt",
+      "description": "Soft organic cotton tee available in 8 colors. Sustainable and comfortable.",
+      "price": "$29.99",
+      "compareAtPrice": null,
+      "image": "https://via.placeholder.com/280x200/D1FAE5/065F46?text=Cotton+Tee",
+      "url": "#",
+      "tags": ["t-shirt", "cotton", "organic", "unisex", "basics"],
+      "available": true
+    },
+    {
+      "id": "prod_006",
+      "title": "Leather Crossbody Bag",
+      "description": "Compact genuine leather crossbody with adjustable strap. Fits phone, wallet, keys.",
+      "price": "$89.99",
+      "compareAtPrice": "$119.99",
+      "image": "https://via.placeholder.com/280x200/FDE68A/92400E?text=Crossbody",
+      "url": "#",
+      "tags": ["bag", "leather", "crossbody", "women", "accessories", "sale"],
+      "available": true
+    },
+    {
+      "id": "prod_007",
+      "title": "Bamboo Sunglasses",
+      "description": "Eco-friendly bamboo frame sunglasses with UV400 protection. Lightweight and stylish.",
+      "price": "$34.99",
+      "compareAtPrice": null,
+      "image": "https://via.placeholder.com/280x200/E0E7FF/3730A3?text=Sunglasses",
+      "url": "#",
+      "tags": ["sunglasses", "bamboo", "eco", "accessories", "unisex"],
+      "available": true
+    },
+    {
+      "id": "prod_008",
+      "title": "Knit Beanie",
+      "description": "Warm ribbed knit beanie in earthy tones. One size fits most.",
+      "price": "$19.99",
+      "compareAtPrice": null,
+      "image": "https://via.placeholder.com/280x200/FCE7F3/9D174D?text=Beanie",
+      "url": "#",
+      "tags": ["beanie", "knit", "winter", "accessories", "unisex"],
+      "available": true
+    },
+    {
+      "id": "prod_009",
+      "title": "Linen Blend Shorts",
+      "description": "Breathable linen-blend shorts with elastic waistband. Great for summer.",
+      "price": "$44.99",
+      "compareAtPrice": "$59.99",
+      "image": "https://via.placeholder.com/280x200/ECFCCB/3F6212?text=Linen+Shorts",
+      "url": "#",
+      "tags": ["shorts", "linen", "summer", "men", "sale"],
+      "available": true
+    },
+    {
+      "id": "prod_010",
+      "title": "Minimalist Watch",
+      "description": "Sleek minimalist analog watch with genuine leather strap. Water resistant.",
+      "price": "$99.99",
+      "compareAtPrice": null,
+      "image": "https://via.placeholder.com/280x200/F3F4F6/1F2937?text=Watch",
+      "url": "#",
+      "tags": ["watch", "minimalist", "accessories", "unisex", "leather"],
+      "available": true
+    }
+  ]
+}
