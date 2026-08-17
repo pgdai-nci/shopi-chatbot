@@ -21,6 +21,7 @@
   transition: transform var(--shopi-transition-fast), background var(--shopi-transition-fast);
 }
 
+.shopi-bubble--hidden { display: none; }
 .shopi-bubble:hover { transform: scale(1.08); }
 .shopi-bubble:active { transform: scale(0.95); }
 
@@ -43,16 +44,30 @@
   justify-content: center;
 }
 
-/* ── Chat Panel (mobile: full-screen) ── */
+/* ── Chat Panel — Full centered card ── */
 .shopi-panel {
-  position: fixed;
-  inset: 0;
-  z-index: var(--shopi-z-panel);
+  width: 100%;
+  max-width: 440px;
+  height: 90vh;
+  max-height: 700px;
   display: flex;
   flex-direction: column;
   background: var(--shopi-bg);
+  border-radius: var(--shopi-radius-lg);
+  box-shadow: var(--shopi-shadow-lg);
+  overflow: hidden;
   opacity: 1;
   transition: opacity var(--shopi-transition-base), transform var(--shopi-transition-slow);
+}
+
+/* Mobile: full screen */
+@media (max-width: 480px) {
+  .shopi-panel {
+    max-width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    border-radius: 0;
+  }
 }
 
 .shopi-panel--hidden {
@@ -61,33 +76,14 @@
   transform: translateY(20px);
 }
 
-/* Desktop: floating panel */
-@media (min-width: 768px) {
-  .shopi-panel {
-    inset: auto;
-    bottom: 90px;
-    right: var(--shopi-space-xl);
-    width: 380px;
-    max-height: 560px;
-    border-radius: var(--shopi-radius-lg);
-    box-shadow: var(--shopi-shadow-lg);
-  }
-  .shopi-panel--hidden {
-    transform: translateY(16px);
-  }
-}
-
-@media (min-width: 1024px) {
-  .shopi-panel { width: 400px; max-height: 600px; }
-}
-
 /* ── Panel Header ── */
 .shopi-panel__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: var(--shopi-space-md) var(--shopi-space-lg);
-  border-bottom: 1px solid var(--shopi-border);
+  background: var(--shopi-primary);
+  color: var(--shopi-primary-contrast);
   flex-shrink: 0;
 }
 
@@ -101,6 +97,7 @@
   width: 28px;
   height: 28px;
   border-radius: var(--shopi-radius-sm);
+  filter: brightness(0) invert(1);
 }
 
 .shopi-panel__title {
@@ -108,21 +105,25 @@
   font-weight: 700;
 }
 
+.shopi-panel__subtitle {
+  font-size: var(--shopi-font-size-xs);
+  opacity: 0.8;
+  margin-left: var(--shopi-space-xs);
+}
+
 .shopi-panel__close {
   width: 32px;
   height: 32px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   border-radius: var(--shopi-radius-sm);
-  color: var(--shopi-text-muted);
-  transition: background var(--shopi-transition-fast), color var(--shopi-transition-fast);
+  color: var(--shopi-primary-contrast);
+  opacity: 0.8;
+  transition: opacity var(--shopi-transition-fast);
 }
 
-.shopi-panel__close:hover {
-  background: var(--shopi-surface);
-  color: var(--shopi-text);
-}
+.shopi-panel__close:hover { opacity: 1; }
 
 /* ── Messages Container ── */
 .shopi-messages {
