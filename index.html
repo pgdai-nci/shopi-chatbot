@@ -21,14 +21,7 @@
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/chat.css">
 
-  <!-- Import map for Gemini SDK (no build step) -->
-  <script type="importmap">
-  {
-    "imports": {
-      "@google/genai": "https://esm.sh/@google/genai@2.16.0"
-    }
-  }
-  </script>
+  <!-- No import map needed: Gemini API calls go through Cloudflare Worker proxy -->
 </head>
 <body>
 
