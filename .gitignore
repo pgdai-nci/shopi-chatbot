@@ -1,0 +1,21 @@
+# Agent Studio (internal pipeline artifacts - do not deploy)
+.agent-studio/
+
+# OpenCode agent definitions (not part of the chatbot)
+.opencode/
+
+# Instruction screenshots (not part of the chatbot)
+build_chatbot_instructions.png
+gemini_chatbot_instructions.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pipeline summary files
+pipeline-summary.html
+pipeline-summary.pdf
+
+# Editor files
+.vscode/
+.idea/

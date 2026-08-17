@@ -1,0 +1,37 @@
+:root {
+  --shopi-primary: #FF6B35;
+  --shopi-primary-hover: #E55A2B;
+  --shopi-primary-contrast: #FFFFFF;
+  --shopi-bg: #FFFFFF;
+  --shopi-surface: #F5F5F5;
+  --shopi-surface-alt: #ECECEC;
+  --shopi-text: #1A1A1A;
+  --shopi-text-secondary: #555555;
+  --shopi-text-muted: #999999;
+  --shopi-border: #E0E0E0;
+  --shopi-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --shopi-font-size-xs: 12px;
+  --shopi-font-size-sm: 13px;
+  --shopi-font-size-base: 14px;
+  --shopi-font-size-lg: 16px;
+  --shopi-font-size-xl: 20px;
+  --shopi-space-xs: 4px;
+  --shopi-space-sm: 8px;
+  --shopi-space-md: 12px;
+  --shopi-space-lg: 16px;
+  --shopi-space-xl: 20px;
+  --shopi-space-2xl: 24px;
+  --shopi-radius-sm: 4px;
+  --shopi-radius-md: 8px;
+  --shopi-radius-lg: 12px;
+  --shopi-radius-xl: 16px;
+  --shopi-radius-full: 50%;
+  --shopi-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shopi-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+  --shopi-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.15);
+  --shopi-transition-fast: 150ms ease;
+  --shopi-transition-base: 250ms ease;
+  --shopi-transition-slow: 350ms ease;
+  --shopi-z-panel: 9999;
+  --shopi-z-bubble: 10000;
+}
